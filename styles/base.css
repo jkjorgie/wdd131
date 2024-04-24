@@ -152,6 +152,9 @@ footer {
 .atlanta h2 {
     text-align: center;
     border-bottom: 1px solid #ccc;
+    background-color: white;
+    color: black;
+    border-radius: 0px;
 }
 
 .atlanta-content {
