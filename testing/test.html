@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Example</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #444;
+    height: 50px;
+    /*padding: 10px 0;*/
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    padding: 20px;
+    gap: 20px;
+    background-color: #f9f9f9;
+    max-width: 1000px;
+    align-self: center;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+}
+
+li {
+    font-family: "Montserrat", sans-serif;
+}
+
+.main-content {
+    flex: 2;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+.main-content h1 {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.side-content {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-content h1 {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.side-content li {
+    padding: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.card {
+
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card .profile p {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.card img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.atlanta {
+    padding: 20px;
+    /*border: 1px solid #ccc;
+    border-radius: 5px;*/
+    margin-bottom: 20px;
+}
+
+.atlanta h2 {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.atlanta-content {
+    display: flex;
+    align-items: center;
+}
+
+.atlanta img {
+    flex: 1;
+    margin-right: 20px;
+    max-width: 30%;
+    height: auto;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Jay Jorgensen</h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/jay-jorgensen-37326a40/">LinkedIn</a>
+            <a href="https://byui.instructure.com/">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/15?lang=eng&id=p15-p18#p15">Scripture</a>
+            <a href="placeholderlink">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <div class="main-content">
+            <h1>About Me</h1>
+            <section class="card profile">
+                <p>My name is Jay Jorgensen. I have lived in Utah my whole life except for my 2-year mission with the LDS Church, where I preached the Gospel of Jesus Christ to people in Uruguay. I have been married for 9 years and have 3 beautiful children. In my free time I love to golf and ice fish. I currently work for a software development/consulting company. I lead a team of software developers there.</p>
+                <img src="images/profile.jpg" alt="Profile Picture">
+            </section>
+            <section class="card atlanta">
+                <h2>Atlanta Braves</h2>
+                <div class="atlanta-content">
+                    <img src="images/atlanta-braves-logo.jpg" alt="Atlanta Braves">
+                    <p>The Atlanta Braves, a storied franchise in Major League Baseball, have captured the hearts of fans for generations with their rich history and thrilling performances. Founded in 1871, the Braves have a legacy that includes iconic players like Hank Aaron, Chipper Jones, and Greg Maddux, who have left an indelible mark on the sport.<br><br>The Braves have seen their fair share of triumphs, including multiple World Series championships, and have remained a competitive force in the league. Their home stadium, Truist Park, located in Cumberland, Georgia, provides a modern and exciting venue for fans to experience the excitement of Braves baseball.</p>
+                </div>
+            </section>
+        </div>
+        <div class="side-content">
+            <h1>Web Dev Resources</h1>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank">MDN Web Docs - Learn Web Development</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools - Web Development Tutorials</a></li>
+                <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp - Learn to Code for Free</a></li>
+                <li><a href="https://www.codecademy.com/" target="_blank">Codecademy - Learn to Code</a></li>
+                <li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow - Question and Answer Community</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Jay Jorgensen | Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

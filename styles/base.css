@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #444;
+    height: 50px;
+    /*padding: 10px 0;*/
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/*main {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    padding: 20px;
+    gap: 20px;
+    background-color: #f9f9f9;
+    max-width: 1000px;
+    align-self: center;
+}*/
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 2 columns, main content wider */
+    grid-gap: 20px; /* gap between grid items */
+    max-width: 1000px;
+    margin: 0 auto; /* center the grid */
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+}
+
+li {
+    font-family: "Montserrat", sans-serif;
+}
+
+/*.main-content {
+    flex: 2;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+}*/
+
+.main-content {
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+.main-content h1 {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*.side-content {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}*/
+
+.side-content {
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+.side-content h1 {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.side-content li {
+    padding: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.card {
+
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card .profile p {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.card img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.atlanta {
+    padding: 20px;
+    /*border: 1px solid #ccc;
+    border-radius: 5px;*/
+    margin-bottom: 20px;
+}
+
+.atlanta h2 {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.atlanta-content {
+    display: flex;
+    align-items: center;
+}
+
+.atlanta img {
+    flex: 1;
+    margin-right: 20px;
+    max-width: 30%;
+    height: auto;
+}
