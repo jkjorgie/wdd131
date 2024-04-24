@@ -8,83 +8,83 @@
     <title>Layout Example</title>
     <style>
         body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: grid;
-    grid-template-rows: auto auto 1fr auto;
-    min-height: 100vh;
-}
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
-header {
-    background-color: #333;
-    color: white;
-    text-align: left;
-    padding: 10px;
-}
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: black;
-    padding: 10px 0;
-    height: 35px;
-}
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #444;
+            padding: 10px 0;
+        }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 20px;
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            flex: 1;
+        }
 
-main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 0px;
-    padding: 0px;
-}
+        main {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+        }
 
-.main-content {
-    background-color: #f9f9f9;
-    padding: 10px;
-}
+        .main-content {
+            flex: 2;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
 
-.side-content {
-    background-color: #ddd;
-    padding: 10px;
-}
+        .side-content {
+            flex: 1;
+            background-color: #ddd;
+            padding: 20px;
+        }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Header Content</h1>
+        <h1>Website Header</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact Us</a>
+        </nav>
     </header>
-    <nav>
-        <a href="placeholderlink">Home</a>
-        <a href="placeholderlink">Projects</a>
-        <a href="placeholderlink">Services</a>
-        <a href="placeholderlink">Contact Us</a>
-    </nav>
     <main>
         <div class="main-content">
-            <h1>Main Content</h1>
-            <!--<p>This is the main content of the website.</p>!-->
+            <h2>Main Content</h2>
+            <p>This is the main content of the website.</p>
         </div>
         <div class="side-content">
-            <h1>Side Content</h1>
-            <!--<p>This is the side content of the website.</p>!-->
+            <h2>Side Content</h2>
+            <p>This is the side content of the website.</p>
         </div>
     </main>
     <footer>
-        <h1>Footer Content</h1>
+        <p>Footer content &copy; 2024</p>
     </footer>
 </body>
 
