@@ -78,7 +78,7 @@ li {
     border-radius: 10px;
 }
 
-.main-content h1 {
+.main-content h2 {
     text-align: center;
     background-color: #333;
     color: white;
@@ -101,7 +101,7 @@ li {
     border-radius: 10px;
 }
 
-.side-content h1 {
+.side-content h2 {
     text-align: center;
     background-color: #333;
     color: white;
