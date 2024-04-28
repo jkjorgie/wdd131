@@ -10,8 +10,15 @@ header, main, footer {
     background-color: #d5e1f9; /* Blueish background color */
 }
 
-main {
+/*main {
     display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}*/
+
+.grid {
+    display: grid;
+    align-items: center;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
 }
