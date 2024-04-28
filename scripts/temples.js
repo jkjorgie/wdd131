@@ -31,3 +31,11 @@ function createCloseButton() {
     });
     header.appendChild(closeButton);
 }
+
+window.addEventListener('resize', function() {
+if (this.window.innerWidth >= 1050) {
+    header.querySelector('.hamburger-menu').style.display = 'none';
+} else {
+    header.querySelector('.hamburger-menu').style.display = 'block';
+}
+});
