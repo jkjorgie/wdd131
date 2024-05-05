@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Country Page</title>
+    <meta name="description" content="WDD 131 | Country Page">
+    <meta name="author" content="Jay Jorgensen">
+    <link rel="stylesheet" type="text/css" href="styles/place.css">
+    <link rel="stylesheet" type="text/css" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Uruguay</h1>
+        <div class="spacer"></div>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/uruguay-map.webp" media="(max-width:750px)">
+                <img src="images/uruguay-dedos.webp" alt="Map of Uruguay">
+            </picture>
+            <!--<picture>
+                <source srcset="images/uruguay-dedos.webp" media="min-width: 1000px">
+                <img src="images/uruguay-map.webp" alt="Orem Utah Temple" width="400" height="200">
+              </picture>!-->
+            <div class="small-spacer"></div>
+        </div>
+        <div class="data">
+            <h2>Data</h2>
+            <div class="data-item">
+                <p class="label">Area:</p>
+                <p class="value">176,220 sq km</p>
+            </div>
+
+            <div class="data-item">
+                <p class="label">Population:</p>
+                <p class="value">3.423M</p>
+            </div>
+
+            <div class="data-item">
+                <p class="label">Capital:</p>
+                <p class="value">Montevideo</p>
+            </div>
+
+            <div class="data-item">
+                <p class="label">Languages:</p>
+                <p class="value">Spanish</p>
+            </div>
+
+            <div class="data-item">
+                <p class="label">Currency:</p>
+                <p class="value">Uruguayan Peso</p>
+            </div>
+
+            <div class="data-item">
+                <p class="label">Time Zone:</p>
+                <p class="value">GMT-3</p>
+            </div>
+
+            <div class="data-item">
+                <p class="label">Calling Code:</p>
+                <p class="value">+598</p>
+            </div>
+
+            <div class="data-item">
+                <p class="label">Internet TLD:</p>
+                <p class="value">.uy</p>
+            </div>
+        </div>
+        <div class="weather">
+            <h2 class="weather-h2">Weather</h2>
+            <img class="weather-icon" src="images/sun-rain-cloud.svg" alt="Mostly cloudy with rain">
+            <div class="data-item">
+                <p class="label">Temperature:</p>
+                <p class="value">15&deg;C</p>
+            </div>
+            <div class="data-item">
+                <p class="label">Conditions:</p>
+                <p class="value">Mostly cloudy with rain</p>
+            </div>
+
+            <div class="data-item">
+                <p class="label">Wind:</p>
+                <p class="value">5 km/h</p>
+            </div>
+
+            <div class="data-item">
+                <p class="label">Wind Chill:</p>
+                <p class="value"><span id="windchill">14&deg;C</span></p>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear">yyyy</span> | Jay Jorgensen | Uruguay</p>
+        <p><span id="lastModified">mm/dd/yyyy hh:mm:ss</span></p>
+    </footer>
+</body>
+
+</html>
