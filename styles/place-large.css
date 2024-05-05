@@ -75,3 +75,27 @@
         display: none;
     }
 }
+
+@media screen and (min-width: 1050px) {
+
+    .data {
+        position: absolute;
+        top: 18%;
+        left: 3%;
+        background-color: rgba(0, 0, 0, .8);
+        color: white;
+        display: block;
+        padding-right: 40px;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 12%;
+        right: 3%;
+        background-color: rgba(0, 0, 0, .8);
+        color: white;
+        display: block;
+        padding-right: 40px;
+        border: none;
+    }
+}
