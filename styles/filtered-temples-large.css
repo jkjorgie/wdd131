@@ -20,13 +20,13 @@
 
     .temple-display {
         grid-template-columns: 1fr 1fr 1fr;
-        margin: 20px;
+        /*margin: 20px;*/
     }
 }
 
 @media screen and (min-width: 725px) and (max-width: 1050px) {
     .temple-display {
         grid-template-columns: 1fr 1fr;
-        margin: 20px;
+        /*margin: 20px;*/
     }
 }
