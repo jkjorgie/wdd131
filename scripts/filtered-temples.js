@@ -170,6 +170,8 @@ function createAndAppendTemple(temple) {
     const img = document.createElement('img');
     img.src = temple.imageUrl;
     img.alt = temple.templeName;
+    img.width = "400";
+    img.height = "250";
     img.loading = "lazy";
 
     templeDiv.appendChild(heading);
