@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+header.showNav {
+    justify-content: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+.nav-links {
+    display: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 5px;
+}
+
+.nav-links.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links.show a:hover {
+    background-color: #555;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; /* center the grid */
+}
+
+.temple-display {
+    display: grid;
+    grid-template-columns: 1fr; /* 2 columns, main content wider */
+    grid-gap: 10px; /* gap between grid items */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/*figure {
+    margin: 0 auto;
+    text-align: center;
+}*/
+
+
+
+p {
+    font-family: "Montserrat", sans-serif;
+}
+
+li {
+    font-family: "Montserrat", sans-serif;
+}
+
+.close-button {
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.temple {
+    background-color: lightgray;
+    border: 1px solid #333;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 320px;
+}
+
+.temple-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: -10px;
+    grid-gap: 10px;
+    padding-right: 10px;
+}
+
+.label {
+    font-weight: bold;
+    text-align: right;
+}
+
+img {
+    width: 90%;
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}

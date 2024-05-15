@@ -1,0 +1,66 @@
+:root {
+    --light-gray: #ddd;
+    --dark-gray: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    /*min-height: 100vh;*/
+    font-family: 'Open Sans', sans-serif;
+    /*max-width: 1000px;*/
+    margin: auto;
+    height: 100%;
+}
+
+header {
+    background-color: var(--dark-gray);
+    color: white;
+    text-align: center;
+    padding-top: 1px;
+}
+
+header h1 {
+    padding: 20px;
+}
+
+footer {
+    background-color: var(--dark-gray);
+    color: white;
+    text-align: center;
+}
+
+.images {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    width: 400px;
+    justify-content: center;
+    align-items:center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: .1rem;
+    animation: fade 15s;
+    background: #000;
+}
+
+@keyframes fade {
+    0% {
+        opactiy: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

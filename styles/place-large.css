@@ -7,9 +7,9 @@
     body {
         position: relative;
     }
-    .hero {
-        /*position: relative;*/
-    }
+    /*.hero {
+        position: relative;
+    }*/
 
     .data {
         position: absolute;
