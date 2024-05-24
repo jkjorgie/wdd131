@@ -1,0 +1,32 @@
+@media screen and (min-width: 1050px) {
+    .hamburger-menu {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 1.2rem;
+    }
+
+    .nav-links a:hover {
+        background-color: #555;
+    }
+
+    .temple-display {
+        grid-template-columns: 1fr 1fr 1fr;
+        /*margin: 20px;*/
+    }
+}
+
+@media screen and (min-width: 725px) and (max-width: 1050px) {
+    .temple-display {
+        grid-template-columns: 1fr 1fr;
+        /*margin: 20px;*/
+    }
+}
