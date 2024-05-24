@@ -77,7 +77,7 @@ main {
     max-width: 1000px;
 }
 
-main div {
+.form {
     width: 98%;
     border: 1px solid #333;
     padding: 10px;
@@ -85,40 +85,48 @@ main div {
     background-color: lightgray;
 }
 
-div .darkgray {
-    background-color: #333;
-    color: white;
+.form {
+    display: block;
 }
 
-div .mediumgray {
-    background-color: #555;
-    color: white;
+.form-field {
+    margin-bottom: 1rem;
 }
 
-div .lightgray {
-    background-color: lightgray;
+.form-field label {
+    display: block;
+    margin-bottom: 0;
+    text-align: left;
+    font-family: bold;
 }
 
-div .wireframes {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    border: none;
+.form-field select {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
 }
 
-.wireframes div {
+.form-field input {
+    width: 90%;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.checkbox-group {
+    display: block;
+    align-items: left;
+}
+
+.checkbox-group label {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    margin-bottom: 0.25rem;
 }
 
-.mobile img {
-    max-width: 250px;
-    height: auto;
-}
-
-.desktop img {
-    max-width: 575px;
-    height: auto;
+.checkbox-group input[type="checkbox"] {
+    margin-right: -175px;
+    margin-left: -175px;
+    padding-left: 0px;
 }
 
 footer {
@@ -127,6 +135,42 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: 10px;
+}
+
+/* stars */
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+
+.stars > label {
+	color: gold;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+}
+
+.stars > label:hover {
+	color: #000;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
 }
 
 /*
