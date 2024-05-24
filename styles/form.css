@@ -39,54 +39,6 @@ p i {
     font-weight: normal;
 }
 
-/*
-header.showNav {
-    justify-content: center;
-}
-
-h1 {
-    margin: 0;
-}
-*/
-
-/*
-.hamburger-menu {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    padding: 5px;
-    box-sizing: border-box;
-}
-
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 3px 0;
-}
-
-.nav-links {
-    display: none;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 2rem;
-    padding: 5px;
-}
-
-.nav-links.show {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav-links.show a:hover {
-    background-color: #555;
-}*/
-
 main {
     display: flex;
     flex-direction: column;
@@ -139,7 +91,6 @@ main {
 
 .checkbox-group {
     display: block;
-    align-items: left;
 }
 
 .checkbox-group label {
