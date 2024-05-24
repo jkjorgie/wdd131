@@ -4,7 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', 'Montserrat', sans-serif;
 }
 
 header {
@@ -17,8 +17,26 @@ header {
     margin-bottom: 10px;
 }
 
-h1, h2, h3, p {
+h1, h2, h3 {
     text-align: center;
+}
+
+p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+p i {
+    font-weight: lighter;
+}
+
+.review-page {
+    display: block;
+}
+
+.review-page p {
+    font-weight: normal;
 }
 
 /*
@@ -73,8 +91,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto; /* center the grid */
-    max-width: 1000px;
+    margin: 0 auto;
+    max-width: 300px;
 }
 
 .form {
@@ -83,10 +101,8 @@ main {
     padding: 10px;
     margin-bottom: 10px;
     background-color: lightgray;
-}
-
-.form {
     display: block;
+    max-width: 250px;
 }
 
 .form-field {
@@ -97,7 +113,12 @@ main {
     display: block;
     margin-bottom: 0;
     text-align: left;
-    font-family: bold;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.form-field label i {
+    font-weight: lighter;
 }
 
 .form-field select {
@@ -112,6 +133,10 @@ main {
     font-size: 1rem;
 }
 
+.formfield textarea {
+    width: 95%;
+}
+
 .checkbox-group {
     display: block;
     align-items: left;
@@ -121,12 +146,20 @@ main {
     display: flex;
     align-items: center;
     margin-bottom: 0.25rem;
+    font-weight: lighter;
 }
 
 .checkbox-group input[type="checkbox"] {
-    margin-right: -175px;
-    margin-left: -175px;
+    /*margin-right: -125px;
+    margin-left: -125px;*/
     padding-left: 0px;
+    width: 10%;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    font-size: 1.5rem;
+    width: 100%;
 }
 
 footer {
