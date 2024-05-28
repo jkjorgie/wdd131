@@ -1,7 +1,7 @@
 const players = [
     {
         name: "Brooks Koepka",
-        tour: "LIV Tour",
+        tour: "LIV",
         totalWins: 20,
         majorWins: 5,
         startingYear: 2012,
@@ -13,7 +13,7 @@ const players = [
     },
     {
         name: "Jordan Spieth",
-        tour: "PGA Tour",
+        tour: "PGA",
         totalWins: 16,
         majorWins: 3,
         startingYear: 2012,
@@ -25,7 +25,7 @@ const players = [
     },
     {
         name: "Justin Thomas",
-        tour: "PGA Tour",
+        tour: "PGA",
         totalWins: 17,
         majorWins: 2,
         startingYear: 2013,
@@ -37,7 +37,7 @@ const players = [
     },
     {
         name: "Rory McIlroy",
-        tour: "PGA Tour",
+        tour: "PGA",
         totalWins: 40,
         majorWins: 4,
         startingYear: 2007,
@@ -49,7 +49,7 @@ const players = [
     },
     {
         name: "Scottie Scheffler",
-        tour: "PGA Tour",
+        tour: "PGA",
         totalWins: 10,
         majorWins: 2,
         startingYear: 2019,
@@ -61,7 +61,7 @@ const players = [
     },
     {
         name: "Tiger Woods",
-        tour: "PGA Tour",
+        tour: "PGA",
         totalWins: 148,
         majorWins: 15,
         startingYear: 1996,
@@ -188,13 +188,43 @@ function createAndAppendPlayer(player) {
     document.querySelector('.players-display').appendChild(playerDiv);
 }
 
-function displayPlayers() {
+function displayPlayers(searchParam) {
 
     document.querySelector('.players-display').innerHTML = "";
 
+    console.log(`search param:${searchParam}`);
+
     for (let i = 0; i < players.length; i++) {
-        createAndAppendPlayer(players[i]);
+        if (searchParam === undefined || searchParam === "") {
+            createAndAppendPlayer(players[i]);
+        }
+        else {
+            var upperParam = searchParam.toUpperCase();
+
+            var name = players[i].name.toUpperCase();
+
+            var tour = players[i].tour.toUpperCase();
+
+            var include = false;
+
+            if (name.includes(upperParam)) {
+                include = true;
+            }
+
+            if (tour.includes(upperParam)) {
+                include = true;
+            }
+
+            if (include) {
+                createAndAppendPlayer(players[i]);
+            }
+        }
     }
+}
+
+function searchParamInput(event) {
+    //alert(`The search param field has been changed to: ${event.target.value}`);
+    displayPlayers(event.target.value);
 }
 
 displayPlayers();
