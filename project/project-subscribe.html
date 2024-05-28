@@ -35,65 +35,52 @@
         </nav>
     </header>
     <main>
-        <div>
-            <h2>Site Name</h2>
-            <p>"Professional Golf" was chosen because the site will be about professional golf, its players, its tours,
-                its news, etc.</p>
-        </div>
-        <div>
-            <h2>Site Purpose</h2>
-            <p>Allow users to learn basic information about the PGA and LIV tours, view info about some of the most
-                popular players, and link to relevant news articles.</p>
-        </div>
-        <div>
-            <h2>Scenarios</h2>
-            <ul>
-                <li>Who are the most popular professional golfers?</li>
-                <li>What do I need to know about the PGA and LIV tours?</li>
-                <li>What is the latest professional golf news?</li>
-            </ul>
-        </div>
-        <div>
-            <h2>Color Schema</h2>
-            <div class="darkgray">
-                <p>Dark Gray: #333 - Backgrounds and Headers</p>
-            </div>
-            <div class="mediumgray">
-                <p>Medium Gray: #555 - Borders/accent colors</p>
-            </div>
-            <div class="lightgray">
-                <p>Light Gray: lightgray - Backgrounds</p>
-            </div>
-            <div class="textcolor">
-                <p>Black: #000000 - text</p>
-                <p>White: #ffffff - text</p>
-            </div>
-        </div>
-        <div>
-            <h2>Typography</h2>
-            <h1>H1 example (Open Sans): Lorem, ipsum dolor.</h1>
-            <h2>H2 example (Open Sans): Lorem, ipsum dolor.</h2>
-            <h3>H3 example (Open Sans): Lorem, ipsum dolor.</h3>
-            <p>Paragraph example (Open Sans): Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
-                consectetur?</p>
-        </div>
-        <div>
-            <h2>Wireframes</h2>
-            <div class="wireframes">
-                <div class="mobile">
-                    <h3>Mobile</h3>
-                    <img src="images/mobilewireframe.png" alt="Mobile Wireframe">
+        <div class="form">
+            <form action="project-subscribe-submit.html" method="get">
+                <h2>Subscribe</h2>
+                <div class="form-field">
+                    <label for="username">Your Name <i>(Required)</i></label>
+                    <input type="text" id="username" name="username" required>
                 </div>
-                <div class="desktop">
-                    <h3>Desktop</h3>
-                    <img src="images/desktopwireframe.png" alt="Desktop Wireframe">
+                <div class="form-field">
+                    <label for="email">Email Address <i>(Required)</i></label>
+                    <input type="email" id="email" name="email" required>
                 </div>
-            </div>
+                <div class="form-field">
+                    <p><b>What communications would you like?</b> <i>(Check all that apply)</i></p>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="golf-news" value="golf-news">Golf news</label>
+                        <label><input type="checkbox" name="product-promos" value="product-promos">Product
+                            promotions</label>
+                        <label><input type="checkbox" name="tournament-updates" value="tournament-updates">Tournament
+                            updates</label>
+                        <label><input type="checkbox" name="local-amateurs" value="local-amateurs">Local amateur
+                            tournaments</label>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label>Communication Frequency <i>(Required)</i></label>
+                    <div class="checkbox-group">
+                        <div class="radio"><input type="radio" id="fiveplus" name="comms-freq" value="5" required><label
+                                for="fiveplus"> Five or more times per month</label></div>
+                        <div class="radio"><input type="radio" id="four" name="comms-freq" value="4" required><label
+                                for="four"> Four times per month</label></div>
+                        <div class="radio"><input type="radio" id="three" name="comms-freq" value="3" required><label
+                                for="three"> Three times per month</label></div>
+                        <div class="radio"><input type="radio" id="two" name="comms-freq" value="2" required><label
+                                for="two"> Twice per month</label></div>
+                        <div class="radio"><input type="radio" id="one" name="comms-freq" value="1" required><label
+                                for="one"> Once per month</label></div>
+                    </div>
+                </div>
+                <input type="submit" id="submit" value="Subscribe">
+            </form>
         </div>
     </main>
     <footer>
         <p>&copy; <span id="currentyear"></span> | Jay Jorgensen | Utah, USA</p>
         <p id="lastModified"></p>
+        <p id="visits"></p>
     </footer>
 </body>
 
