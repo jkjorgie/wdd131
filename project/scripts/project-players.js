@@ -192,8 +192,6 @@ function displayPlayers(searchParam) {
 
     document.querySelector('.players-display').innerHTML = "";
 
-    console.log(`search param:${searchParam}`);
-
     for (let i = 0; i < players.length; i++) {
         if (searchParam === undefined || searchParam === "") {
             createAndAppendPlayer(players[i]);
@@ -202,8 +200,15 @@ function displayPlayers(searchParam) {
             var upperParam = searchParam.toUpperCase();
 
             var name = players[i].name.toUpperCase();
-
             var tour = players[i].tour.toUpperCase();
+            var height = players[i].height.toUpperCase();
+            var weight = players[i].weight.toUpperCase();
+
+            console.log(`search param:${upperParam}`);
+            console.log(`name:${name}`);
+            console.log(`tour:${tour}`);
+            console.log(`weight:${weight}`);
+            console.log(`height:${height}`);
 
             var include = false;
 
@@ -211,8 +216,22 @@ function displayPlayers(searchParam) {
                 include = true;
             }
 
-            if (tour.includes(upperParam)) {
-                include = true;
+            if (!include) {
+                if (tour.includes(upperParam)) {
+                    include = true;
+                }
+            }
+
+            if (!include) {
+                if (height.includes(upperParam)) {
+                    include = true;
+                }
+            }
+
+            if (!include) {
+                if (weight.includes(upperParam)) {
+                    include = true;
+                }
             }
 
             if (include) {
